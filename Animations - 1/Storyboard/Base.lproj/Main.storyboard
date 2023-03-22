@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sIt-ML-ChM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="yvq-Uy-wE3">
+            <objects>
+                <viewController id="UlZ-Fk-x18" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gI-Xv-OmX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DFx-5S-M63"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Smw-uG-Q8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1E0-Lv-dAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="421"/>
+        </scene>
+        <!--Swipe-->
+        <scene sceneID="aML-6R-nei">
+            <objects>
+                <viewController id="wHa-23-HpH" customClass="SwipeViewController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVJ-ic-Qfb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="FI4-H6-8yQ">
+                                <rect key="frame" x="30" y="762" width="354" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcM-Hd-5Pf">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="kbF-qh-an6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="backward" catalog="system">
+                                            <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="previewButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="pGS-KT-mFj"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-Fi-hTZ">
+                                        <rect key="frame" x="121" y="2.5" width="112" height="26"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hK-Eh-8Ml">
+                                        <rect key="frame" x="294" y="0.0" width="60" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="rsh-uc-cjM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="forward" catalog="system">
+                                            <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="gVw-7i-lDT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eYy-Ad-3AJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eYy-Ad-3AJ" firstAttribute="trailing" secondItem="FI4-H6-8yQ" secondAttribute="trailing" constant="30" id="LTw-ph-osn"/>
+                            <constraint firstItem="eYy-Ad-3AJ" firstAttribute="bottom" secondItem="FI4-H6-8yQ" secondAttribute="bottom" constant="20" id="Te5-bV-npM"/>
+                            <constraint firstItem="FI4-H6-8yQ" firstAttribute="leading" secondItem="eYy-Ad-3AJ" secondAttribute="leading" constant="30" id="lqV-qn-gOp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swipe" image="forward.end.alt" catalog="system" id="F0m-JB-Z9K"/>
+                    <connections>
+                        <outlet property="nextButton" destination="5hK-Eh-8Ml" id="LXl-Jw-slD"/>
+                        <outlet property="previewButton" destination="mcM-Hd-5Pf" id="yS6-rA-8jf"/>
+                        <outlet property="viewSwipePageControl" destination="6uM-Fi-hTZ" id="sgk-0M-0Wn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Kz-hb-443" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-558"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Suu-Vf-Sy8">
+            <objects>
+                <tabBarController id="sIt-ML-ChM" customClass="MainTabBarController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ksA-LV-un4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wHa-23-HpH" kind="relationship" relationship="viewControllers" id="2NR-FQ-VR4"/>
+                        <segue destination="UlZ-Fk-x18" kind="relationship" relationship="viewControllers" id="D9k-eN-WNw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Nk-Vr-bMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="-66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="forward" catalog="system" width="128" height="79"/>
+        <image name="forward.end.alt" catalog="system" width="128" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
