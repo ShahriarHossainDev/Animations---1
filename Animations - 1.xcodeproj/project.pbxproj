@@ -16,6 +16,11 @@
 		FAFFFB7129CB042000EBA3ED /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7029CB042000EBA3ED /* ButtonViewController.swift */; };
 		FAFFFB7329CB04B000EBA3ED /* UIButtonExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7229CB04B000EBA3ED /* UIButtonExtenstion.swift */; };
 		FAFFFB7629CB08DF00EBA3ED /* ButtonSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */; };
+		FAFFFB8429CB0E3E00EBA3ED /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB8329CB0E3E00EBA3ED /* LabelViewController.swift */; };
+		FAFFFB8B29CB103900EBA3ED /* DWAnimatedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB8629CB103800EBA3ED /* DWAnimatedLabel.swift */; };
+		FAFFFB8C29CB103900EBA3ED /* DWHollowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB8829CB103800EBA3ED /* DWHollowLabel.swift */; };
+		FAFFFB8D29CB103900EBA3ED /* DWAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB8929CB103800EBA3ED /* DWAnimator.swift */; };
+		FAFFFB9029CB1B2200EBA3ED /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB8F29CB1B2200EBA3ED /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,12 @@
 		FAFFFB7029CB042000EBA3ED /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		FAFFFB7229CB04B000EBA3ED /* UIButtonExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtenstion.swift; sourceTree = "<group>"; };
 		FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecViewController.swift; sourceTree = "<group>"; };
+		FAFFFB8329CB0E3E00EBA3ED /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		FAFFFB8629CB103800EBA3ED /* DWAnimatedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWAnimatedLabel.swift; sourceTree = "<group>"; };
+		FAFFFB8729CB103800EBA3ED /* DWAnimatedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAnimatedLabel.h; sourceTree = "<group>"; };
+		FAFFFB8829CB103800EBA3ED /* DWHollowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWHollowLabel.swift; sourceTree = "<group>"; };
+		FAFFFB8929CB103800EBA3ED /* DWAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWAnimator.swift; sourceTree = "<group>"; };
+		FAFFFB8F29CB1B2200EBA3ED /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +104,7 @@
 		FA91A63B29CACEDD005570A0 /* Serecns */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFFB8129CB0E1900EBA3ED /* Label View */,
 				FA91A64229CAD1DA005570A0 /* Button View */,
 				FA91A63F29CAD0DA005570A0 /* MainTabBar */,
 			);
@@ -110,6 +122,8 @@
 		FA91A63D29CACEF6005570A0 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFFB8529CB103800EBA3ED /* DWAnimatedLabel */,
+				FAFFFB8F29CB1B2200EBA3ED /* AnimatedButton.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -154,6 +168,33 @@
 				FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		FAFFFB8129CB0E1900EBA3ED /* Label View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFFB8229CB0E3100EBA3ED /* View */,
+			);
+			path = "Label View";
+			sourceTree = "<group>";
+		};
+		FAFFFB8229CB0E3100EBA3ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFFB8329CB0E3E00EBA3ED /* LabelViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFFFB8529CB103800EBA3ED /* DWAnimatedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFFB8629CB103800EBA3ED /* DWAnimatedLabel.swift */,
+				FAFFFB8729CB103800EBA3ED /* DWAnimatedLabel.h */,
+				FAFFFB8829CB103800EBA3ED /* DWHollowLabel.swift */,
+				FAFFFB8929CB103800EBA3ED /* DWAnimator.swift */,
+			);
+			path = DWAnimatedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFFFB7129CB042000EBA3ED /* ButtonViewController.swift in Sources */,
+				FAFFFB8429CB0E3E00EBA3ED /* LabelViewController.swift in Sources */,
 				FAFFFB7329CB04B000EBA3ED /* UIButtonExtenstion.swift in Sources */,
 				FAFFFB7629CB08DF00EBA3ED /* ButtonSecViewController.swift in Sources */,
+				FAFFFB9029CB1B2200EBA3ED /* AnimatedButton.swift in Sources */,
 				FA91A62629CACE63005570A0 /* AppDelegate.swift in Sources */,
+				FAFFFB8D29CB103900EBA3ED /* DWAnimator.swift in Sources */,
+				FAFFFB8C29CB103900EBA3ED /* DWHollowLabel.swift in Sources */,
 				FA91A62829CACE63005570A0 /* SceneDelegate.swift in Sources */,
+				FAFFFB8B29CB103900EBA3ED /* DWAnimatedLabel.swift in Sources */,
 				FA91A64129CAD175005570A0 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
