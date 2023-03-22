@@ -24,46 +24,113 @@
             </objects>
             <point key="canvasLocation" x="322" y="421"/>
         </scene>
-        <!--Swipe-->
+        <!--Button Animation-->
         <scene sceneID="aML-6R-nei">
             <objects>
-                <viewController id="wHa-23-HpH" customClass="SwipeViewController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wHa-23-HpH" customClass="ButtonViewController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVJ-ic-Qfb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="FI4-H6-8yQ">
-                                <rect key="frame" x="30" y="762" width="354" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="J1q-Gd-ZDF">
+                                <rect key="frame" x="147" y="128" width="120" height="567"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcM-Hd-5Pf">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="kbF-qh-an6"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" image="backward" catalog="system">
-                                            <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOY-ar-0vQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Pulse">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="previewButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="pGS-KT-mFj"/>
+                                            <action selector="pulseButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="cNz-ju-w9y"/>
                                         </connections>
                                     </button>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-Fi-hTZ">
-                                        <rect key="frame" x="121" y="2.5" width="112" height="26"/>
-                                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </pageControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hK-Eh-8Ml">
-                                        <rect key="frame" x="294" y="0.0" width="60" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="rsh-uc-cjM"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" image="forward" catalog="system">
-                                            <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54m-MJ-Dcc">
+                                        <rect key="frame" x="0.0" y="55" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Flash">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="nextButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="gVw-7i-lDT"/>
+                                            <action selector="flashButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="zpy-V3-bto"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qe-fe-zwy">
+                                        <rect key="frame" x="0.0" y="110" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Shake">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shakeButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="COx-qM-eIh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLy-QE-Jmy">
+                                        <rect key="frame" x="0.0" y="165" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Tada">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tadaButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="BOR-2Q-sC3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSq-bm-Jly">
+                                        <rect key="frame" x="0.0" y="220" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Rotation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RotationButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="HIp-J8-AwB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-LK-tqL">
+                                        <rect key="frame" x="0.0" y="275" width="120" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Swing">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SwingButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="1vm-bd-sov"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-cQ-n1F">
+                                        <rect key="frame" x="0.0" y="330" width="120" height="64"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" image="heart">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="heartButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="YZz-Gg-v40"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcE-aR-PeU">
+                                        <rect key="frame" x="0.0" y="414" width="120" height="100"/>
+                                        <state key="normal" image="soccer_ball"/>
+                                        <connections>
+                                            <action selector="ballButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="03x-gy-fQl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lK-nZ-ICh">
+                                        <rect key="frame" x="0.0" y="534" width="120" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="KtD-n2-g3F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                        <state key="normal" title="Next View">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NextButtonAction:" destination="wHa-23-HpH" eventType="touchUpInside" id="qBu-Ie-wI4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,21 +139,26 @@
                         <viewLayoutGuide key="safeArea" id="eYy-Ad-3AJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eYy-Ad-3AJ" firstAttribute="trailing" secondItem="FI4-H6-8yQ" secondAttribute="trailing" constant="30" id="LTw-ph-osn"/>
-                            <constraint firstItem="eYy-Ad-3AJ" firstAttribute="bottom" secondItem="FI4-H6-8yQ" secondAttribute="bottom" constant="20" id="Te5-bV-npM"/>
-                            <constraint firstItem="FI4-H6-8yQ" firstAttribute="leading" secondItem="eYy-Ad-3AJ" secondAttribute="leading" constant="30" id="lqV-qn-gOp"/>
+                            <constraint firstItem="J1q-Gd-ZDF" firstAttribute="centerX" secondItem="qVJ-ic-Qfb" secondAttribute="centerX" id="G1z-xS-1k3"/>
+                            <constraint firstItem="J1q-Gd-ZDF" firstAttribute="top" secondItem="eYy-Ad-3AJ" secondAttribute="top" constant="40" id="b82-qv-7qR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Swipe" image="forward.end.alt" catalog="system" id="F0m-JB-Z9K"/>
+                    <navigationItem key="navigationItem" title="Button Animation" id="jrS-JI-hnN"/>
                     <connections>
-                        <outlet property="nextButton" destination="5hK-Eh-8Ml" id="LXl-Jw-slD"/>
-                        <outlet property="previewButton" destination="mcM-Hd-5Pf" id="yS6-rA-8jf"/>
-                        <outlet property="viewSwipePageControl" destination="6uM-Fi-hTZ" id="sgk-0M-0Wn"/>
+                        <outlet property="ballButton" destination="lcE-aR-PeU" id="E17-Bw-Ilg"/>
+                        <outlet property="flashButton" destination="54m-MJ-Dcc" id="fb8-x8-kUS"/>
+                        <outlet property="heartButton" destination="7CE-cQ-n1F" id="Amd-Ga-2mc"/>
+                        <outlet property="nextButton" destination="8lK-nZ-ICh" id="cAm-39-uLC"/>
+                        <outlet property="pulseButton" destination="QOY-ar-0vQ" id="ezs-0C-leT"/>
+                        <outlet property="rotationButton" destination="ZSq-bm-Jly" id="F4h-aq-fBZ"/>
+                        <outlet property="shakeButton" destination="7Qe-fe-zwy" id="ajh-TB-T2y"/>
+                        <outlet property="swingButton" destination="hRe-LK-tqL" id="eNA-el-pU7"/>
+                        <outlet property="tadaButton" destination="yLy-QE-Jmy" id="OQI-vj-wzh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Kz-hb-443" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="-558"/>
+            <point key="canvasLocation" x="1231.8840579710145" y="-558.48214285714278"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="Suu-Vf-Sy8">
@@ -98,7 +170,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wHa-23-HpH" kind="relationship" relationship="viewControllers" id="2NR-FQ-VR4"/>
+                        <segue destination="jZo-tp-7F9" kind="relationship" relationship="viewControllers" id="2NR-FQ-VR4"/>
                         <segue destination="UlZ-Fk-x18" kind="relationship" relationship="viewControllers" id="D9k-eN-WNw"/>
                     </connections>
                 </tabBarController>
@@ -106,13 +178,121 @@
             </objects>
             <point key="canvasLocation" x="-567" y="-66"/>
         </scene>
+        <!--UIButton-->
+        <scene sceneID="Z2C-xy-Sb1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jZo-tp-7F9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UIButton" image="play.circle" catalog="system" id="F0m-JB-Z9K"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rdd-HE-K8r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wHa-23-HpH" kind="relationship" relationship="rootViewController" id="xgG-E0-gtU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hia-ns-Xdp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="-558.48214285714278"/>
+        </scene>
+        <!--Button Sec View Controller-->
+        <scene sceneID="SEk-ba-LD7">
+            <objects>
+                <viewController storyboardIdentifier="secVC" id="NWf-A6-yJv" customClass="ButtonSecViewController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bfc-ck-5Dx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qGw-WI-GV2">
+                                <rect key="frame" x="20" y="64" width="150" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-F6-8B5">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8eZ-pi-EIG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="xkL-2X-5kJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Going One">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-tt-4io">
+                                        <rect key="frame" x="0.0" y="80" width="150" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QIt-IQ-az5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Going Two">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9d-Od-GjJ">
+                                        <rect key="frame" x="0.0" y="160" width="150" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SmT-CR-7JE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <state key="normal" title="Going Three">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zXb-aj-S16"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qGw-WI-GV2" firstAttribute="leading" secondItem="zXb-aj-S16" secondAttribute="leading" constant="20" id="YEn-op-a5c"/>
+                            <constraint firstItem="qGw-WI-GV2" firstAttribute="top" secondItem="zXb-aj-S16" secondAttribute="top" constant="20" id="eEM-ta-Uwc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="oneButton" destination="Qma-F6-8B5" id="sUm-YD-Qhp"/>
+                        <outlet property="threeButton" destination="M9d-Od-GjJ" id="7rF-8g-nbi"/>
+                        <outlet property="twoButton" destination="PmK-tt-4io" id="nX5-Mw-6hy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3q-KX-Njv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="-558"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="backward" catalog="system" width="128" height="79"/>
-        <image name="forward" catalog="system" width="128" height="79"/>
-        <image name="forward.end.alt" catalog="system" width="128" height="71"/>
+        <image name="heart" width="64" height="64"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="soccer_ball" width="100" height="100"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

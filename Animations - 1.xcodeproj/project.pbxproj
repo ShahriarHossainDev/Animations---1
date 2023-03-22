@@ -13,7 +13,9 @@
 		FA91A62F29CACE65005570A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA91A62E29CACE65005570A0 /* Assets.xcassets */; };
 		FA91A63229CACE65005570A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA91A63029CACE65005570A0 /* LaunchScreen.storyboard */; };
 		FA91A64129CAD175005570A0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91A64029CAD175005570A0 /* MainTabBarController.swift */; };
-		FA91A64529CAD348005570A0 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91A64429CAD348005570A0 /* SwipeViewController.swift */; };
+		FAFFFB7129CB042000EBA3ED /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7029CB042000EBA3ED /* ButtonViewController.swift */; };
+		FAFFFB7329CB04B000EBA3ED /* UIButtonExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7229CB04B000EBA3ED /* UIButtonExtenstion.swift */; };
+		FAFFFB7629CB08DF00EBA3ED /* ButtonSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		FA91A63129CACE65005570A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA91A63329CACE65005570A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA91A64029CAD175005570A0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		FA91A64429CAD348005570A0 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		FAFFFB7029CB042000EBA3ED /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		FAFFFB7229CB04B000EBA3ED /* UIButtonExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtenstion.swift; sourceTree = "<group>"; };
+		FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,7 @@
 		FA91A63B29CACEDD005570A0 /* Serecns */ = {
 			isa = PBXGroup;
 			children = (
-				FA91A64229CAD1DA005570A0 /* Swipe */,
+				FA91A64229CAD1DA005570A0 /* Button View */,
 				FA91A63F29CAD0DA005570A0 /* MainTabBar */,
 			);
 			path = Serecns;
@@ -98,6 +102,7 @@
 		FA91A63C29CACEEA005570A0 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFFB7229CB04B000EBA3ED /* UIButtonExtenstion.swift */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -126,20 +131,29 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		FA91A64229CAD1DA005570A0 /* Swipe */ = {
+		FA91A64229CAD1DA005570A0 /* Button View */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFFB7429CB084F00EBA3ED /* SubView */,
 				FA91A64329CAD1E9005570A0 /* View */,
 			);
-			path = Swipe;
+			path = "Button View";
 			sourceTree = "<group>";
 		};
 		FA91A64329CAD1E9005570A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA91A64429CAD348005570A0 /* SwipeViewController.swift */,
+				FAFFFB7029CB042000EBA3ED /* ButtonViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FAFFFB7429CB084F00EBA3ED /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFFB7529CB08DF00EBA3ED /* ButtonSecViewController.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,10 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFFFB7129CB042000EBA3ED /* ButtonViewController.swift in Sources */,
+				FAFFFB7329CB04B000EBA3ED /* UIButtonExtenstion.swift in Sources */,
+				FAFFFB7629CB08DF00EBA3ED /* ButtonSecViewController.swift in Sources */,
 				FA91A62629CACE63005570A0 /* AppDelegate.swift in Sources */,
 				FA91A62829CACE63005570A0 /* SceneDelegate.swift in Sources */,
 				FA91A64129CAD175005570A0 /* MainTabBarController.swift in Sources */,
-				FA91A64529CAD348005570A0 /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
