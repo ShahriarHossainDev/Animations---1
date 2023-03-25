@@ -11,18 +11,92 @@
         <!--UIView-->
         <scene sceneID="yvq-Uy-wE3">
             <objects>
-                <viewController id="UlZ-Fk-x18" sceneMemberID="viewController">
+                <viewController id="UlZ-Fk-x18" customClass="CustomViewController" customModule="Animations___1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0gI-Xv-OmX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hlv-bx-efI">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMW-8O-lQp">
+                                <rect key="frame" x="10" y="653" width="394" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-Pt-bRL">
+                                        <rect key="frame" x="10" y="10" width="94.5" height="113"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HM2-Qi-MwP">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Zoom Only">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="zoomOnlyButtonAction:" destination="UlZ-Fk-x18" eventType="touchUpInside" id="BYo-Sa-EII"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-mM-flC">
+                                                <rect key="frame" x="0.0" y="41" width="94.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Curve">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="curveButtonAction:" destination="UlZ-Fk-x18" eventType="touchUpInside" id="M64-dR-cyE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV0-It-fga">
+                                                <rect key="frame" x="0.0" y="82" width="94.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Moving">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="movingButtonAction:" destination="UlZ-Fk-x18" eventType="touchUpInside" id="dzY-tu-eoT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nu-hb-vZo">
+                                        <rect key="frame" x="326" y="10" width="58" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Clear">
+                                            <color key="baseForegroundColor" red="0.0" green="0.1176470588" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearButtonAction:" destination="UlZ-Fk-x18" eventType="touchUpInside" id="v10-xB-ucu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ecz-Pt-bRL" firstAttribute="leading" secondItem="kMW-8O-lQp" secondAttribute="leading" constant="10" id="2gc-PE-Dmm"/>
+                                    <constraint firstItem="ecz-Pt-bRL" firstAttribute="top" secondItem="kMW-8O-lQp" secondAttribute="top" constant="10" id="7dp-Bl-v1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="4nu-hb-vZo" secondAttribute="trailing" constant="10" id="K5i-d4-hyq"/>
+                                    <constraint firstAttribute="height" constant="150" id="UpX-oo-aQK"/>
+                                    <constraint firstItem="4nu-hb-vZo" firstAttribute="top" secondItem="kMW-8O-lQp" secondAttribute="top" constant="10" id="vG4-c9-f29"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DFx-5S-M63"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DFx-5S-M63" firstAttribute="trailing" secondItem="kMW-8O-lQp" secondAttribute="trailing" constant="10" id="3df-OK-AWI"/>
+                            <constraint firstItem="DFx-5S-M63" firstAttribute="bottom" secondItem="kMW-8O-lQp" secondAttribute="bottom" constant="10" id="Xo8-fW-jKg"/>
+                            <constraint firstItem="kMW-8O-lQp" firstAttribute="leading" secondItem="DFx-5S-M63" secondAttribute="leading" constant="10" id="qx7-9R-Je3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="UIView" image="ticket" catalog="system" id="Smw-uG-Q8u"/>
+                    <connections>
+                        <outlet property="buttonView" destination="kMW-8O-lQp" id="7HI-Az-Ydg"/>
+                        <outlet property="zoomOnlyView" destination="Hlv-bx-efI" id="axx-1y-2c9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1E0-Lv-dAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="421"/>
+            <point key="canvasLocation" x="321.73913043478262" y="420.53571428571428"/>
         </scene>
         <!--Button Animation-->
         <scene sceneID="aML-6R-nei">
@@ -265,7 +339,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-Rv-q0r" customClass="AnimatedButton" customModule="AnimateButtonLabel" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-Rv-q0r" customClass="AnimatedButton" customModule="Animations___1" customModuleProvider="target">
                                 <rect key="frame" x="173" y="723.5" width="68" height="30"/>
                                 <state key="normal" title="Press me!"/>
                             </button>
