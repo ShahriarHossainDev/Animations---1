@@ -11,13 +11,15 @@ class CustomViewController: UIViewController {
     
     let newViewWidth: CGFloat = 100
     
+    
+    @IBOutlet weak var getColorView: GradientView!
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var zoomOnlyView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonView.dropShadow()
-        
+        getRandomColor()
         // Do any additional setup after loading the view.
     }
     
@@ -54,6 +56,21 @@ class CustomViewController: UIViewController {
         })
         
         
+    }
+    
+    func getRandomColor() {
+        /*
+         let red   = CGFloat((arc4random() % 256)) / 255.0
+         let green = CGFloat((arc4random() % 256)) / 255.0
+         let blue  = CGFloat((arc4random() % 256)) / 255.0
+         let alpha = CGFloat(1.0)
+         
+         UIView.animate(withDuration: 3.0, delay: 0.0, options:[.repeat, .autoreverse], animations: {
+         self.getColorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
+         }, completion:nil)
+         */
+        
+        getColorView.startAnimating(colors: [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1).cgColor,#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1).cgColor], location: [0.0, 0.5, 1.0] )
     }
     
     // MARK: - IBAction

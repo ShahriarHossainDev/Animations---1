@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA44B80F29CF00F000B5CB5F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44B80E29CF00F000B5CB5F /* GradientView.swift */; };
+		FA44B81329CF090E00B5CB5F /* LoadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44B81229CF090E00B5CB5F /* LoadTableViewController.swift */; };
 		FA4E5AA329CEAC7500068DF1 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E5AA229CEAC7500068DF1 /* CustomViewController.swift */; };
 		FA4E5AA529CEB65900068DF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E5AA429CEB65900068DF1 /* Constants.swift */; };
 		FA91A62629CACE63005570A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91A62529CACE63005570A0 /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA44B80E29CF00F000B5CB5F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FA44B81229CF090E00B5CB5F /* LoadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTableViewController.swift; sourceTree = "<group>"; };
 		FA4E5AA229CEAC7500068DF1 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		FA4E5AA429CEB65900068DF1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA91A62229CACE63005570A0 /* Animations - 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations - 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA44B81029CF08D900B5CB5F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				FA44B81129CF08E400B5CB5F /* View */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		FA44B81129CF08E400B5CB5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA44B81229CF090E00B5CB5F /* LoadTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FA4E5AA029CEAC2400068DF1 /* View View */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +144,7 @@
 		FA91A63B29CACEDD005570A0 /* Serecns */ = {
 			isa = PBXGroup;
 			children = (
+				FA44B81029CF08D900B5CB5F /* Table View */,
 				FA4E5AA029CEAC2400068DF1 /* View View */,
 				FAFFFB8129CB0E1900EBA3ED /* Label View */,
 				FA91A64229CAD1DA005570A0 /* Button View */,
@@ -146,6 +167,7 @@
 				FA4E5AA429CEB65900068DF1 /* Constants.swift */,
 				FAFFFB8529CB103800EBA3ED /* DWAnimatedLabel */,
 				FAFFFB8F29CB1B2200EBA3ED /* AnimatedButton.swift */,
+				FA44B80E29CF00F000B5CB5F /* GradientView.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -294,9 +316,11 @@
 				FAFFFB8429CB0E3E00EBA3ED /* LabelViewController.swift in Sources */,
 				FAFFFB7329CB04B000EBA3ED /* UIButtonExtenstion.swift in Sources */,
 				FA4E5AA329CEAC7500068DF1 /* CustomViewController.swift in Sources */,
+				FA44B80F29CF00F000B5CB5F /* GradientView.swift in Sources */,
 				FAFFFB7629CB08DF00EBA3ED /* ButtonSecViewController.swift in Sources */,
 				FAFFFB9029CB1B2200EBA3ED /* AnimatedButton.swift in Sources */,
 				FA91A62629CACE63005570A0 /* AppDelegate.swift in Sources */,
+				FA44B81329CF090E00B5CB5F /* LoadTableViewController.swift in Sources */,
 				FA4E5AA529CEB65900068DF1 /* Constants.swift in Sources */,
 				FAFFFB8D29CB103900EBA3ED /* DWAnimator.swift in Sources */,
 				FAFFFB8C29CB103900EBA3ED /* DWHollowLabel.swift in Sources */,
